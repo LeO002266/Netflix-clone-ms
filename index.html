@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <!-- Add the link to the "Frank Ruhl Libre" font from Google Fonts -->
+    <link rel="stylesheet" href="netflix2.css"> <!-- Replace with the correct path to your CSS file -->
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="pngwing.com.png" alt="Netflix Logo">
+            </div>
+            <div class="menu">
+                <a href="#" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">TV Shows</button>
+                    <div class="dropdown-content">
+                        <a href="#">Action</a>
+                        <a href="#">Drama</a>
+                        <a href="#">Comedy</a>
+                        <!-- Add more TV show genres -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Movies</button>
+                    <div class="dropdown-content">
+                        <a href="#">Action</a>
+                        <a href="#">Adventure</a>
+                        <a href="#">Sci-Fi</a>
+                        <!-- Add more movie genres -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Genres</button>
+                    <div class="dropdown-content">
+                        <a href="#">Action</a>
+                        <a href="#">Adventure</a>
+                        <a href="#">Comedy</a>
+                        <!-- Add more genres -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Settings</button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Account</a>
+                        <a href="#">Privacy</a>
+                        <!-- Add more settings options -->
+                    </div>
+                </div>
+                <a href="#">New & Popular</a>
+                <a href="#">My List</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search">
+                <button class="search-button" onclick="performSearch()">Search</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Netflix</h1>
+            <p>Unlimited movies, TV shows, and more.</p>
+            <button class="cta-button">Watch Now</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="featured">
+            <h2>Featured</h2>
+            <div class="featured-content">
+                <div class="movie-card">
+                    <img src="download (1).jpeg" alt="Shadow Bone">
+                    <div class="movie-details">
+                        <h3>Shadow Bone</h3>
+                        <p>Dark fantasy series</p>
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 1 -->
+                <div class="movie-card">
+                    <img src="download.jpeg" alt="Stranger Things">
+                    <div class="movie-details">
+                        <h3>Stranger Things</h3>
+                        <p>A group of friends starts to uncover supernatural mysteries.</p>
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <img src="HD-wallpaper-lucifer-poster-tv-show-thumbnail.jpg" alt="Lucifer">
+                    <div class="movie-details">
+                        <h3>Lucifer</h3>
+                        <p>Lucifer Morningstar, the Devil, grows bored and unhappy .</p>
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+                
+                <!-- Additional Movie Cards -->
+                <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <img src="images (1).jpeg" alt="Action Hero">
+                    <div class="movie-details">
+                        <h3>Action Hero</h3>
+                        <p>Follow the adventures of a fearless action hero.</p>
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+
+                <!-- Movie Card 4 -->
+                <div class="movie-card">
+                    <img src="images2.jpeg" alt="Breaking Bad">
+                    <div class="movie-details">
+                        <h3>Breaking Bad</h3>
+                        <p>A high school chemistry teacher turned methamphetamine.</p>
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+                <!-- End of Additional Movie Cards -->
+            </div>
+        </section>
+        <!-- Add more sections for genres, recommendations, etc. -->
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Netflix Clone</p>
+    </footer>
+</body>
+</html>
+/* Add this CSS to your external CSS file or within a <style> tag in the HTML head */
+    .play-button {
+        background-color: #e50914; /* Netflix red color */
+        color: #fff; /* White text color */
+        font-weight: bold;
+        padding: 5px 10px; /* Adjust padding for a smaller size */
+        font-size: 14px; /* Adjust font size for a smaller button text */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .play-button:hover {
+        background-color: #ff0000; /* Darker red on hover */
+    }
+    
